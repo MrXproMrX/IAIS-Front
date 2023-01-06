@@ -107,3 +107,34 @@ $(function(){
 });
 
 // -------------------------------===========-------------------------------
+
+$( ".centers_in__link__cart" ).click(function() {
+  $(this ).each(function( i ) {
+    if ( this.style.position !== "relative" ) {
+      this.style.position = "relative";
+      let Catalog_max__pro__ul_link = document.querySelectorAll('.centers_in__cart__item');
+      for(let i = 0; i<Catalog_max__pro__ul_link.length; i++){
+          Catalog_max__pro__ul_link[i].addEventListener('click',function(){
+              for(let j = 0; j<Catalog_max__pro__ul_link.length;j++){
+                  Catalog_max__pro__ul_link[j].classList.remove('centers_in__active');
+              }
+              this.classList.add('centers_in__active');
+          })
+      }
+      
+    } else {
+      this.style.position = "";
+      let Catalog_max__pro__ul_link = document.querySelectorAll('.centers_in__cart__item');
+      for(let i = 0; i<Catalog_max__pro__ul_link.length; i++){
+          Catalog_max__pro__ul_link[i].addEventListener('click',function(){
+              for(let j = 0; j<Catalog_max__pro__ul_link.length;j++){
+                  Catalog_max__pro__ul_link[j].classList.remove('centers_in__active');
+              }
+              this.classList.add('centers_in__active_12');
+          })
+      }
+    }
+  });
+});
+
+// -------------------------------===========-------------------------------

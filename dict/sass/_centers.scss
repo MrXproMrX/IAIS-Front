@@ -137,15 +137,43 @@
     &__link__cart{
         display: inline-block;
         margin-top: 20px;
-        padding: 18px 50px;
+        padding: 16px 50px;
         background-color:$title;
         @include fontAll(12px,700,$fff);
         line-height: 100%;
         text-transform: uppercase;
+        border:2px solid $title;
+        @extend%transition;
         span{
             margin-left: 5px;
         }
     }
+
+    &__cart__text{
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    &__active{
+        .centers_in__cart__text{
+            width: 100%;
+            height: auto;
+            overflow: inherit;
+            opacity: 1;
+
+            .outputs__title__h2{
+                margin-top: 20px;
+            }
+        }
+
+        .centers_in__link__cart{
+            background-color:$fff;
+            color:$title;
+        }
+    }
+
 }
 
 // centers_in end

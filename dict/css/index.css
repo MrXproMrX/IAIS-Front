@@ -28,7 +28,7 @@
   src: url("../fonts/GothaProBla.otf") format("truetype");
   font-weight: 900;
 }
-.footer__link__icons, .footer__link__menu, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__link__dropdown, .header__link__cart span, .header__link__cart, .header__link__menu, .outputs_contint__icons__link, .experts__pagination__link, .experts__pagination__next, .history__download__cart, .history__download__data, .history__download__title__h3 span, .history__download__title__h3, .history__menu__link {
+.footer__link__icons, .footer__link__menu, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__link__dropdown, .header__link__cart span, .header__link__cart, .header__link__menu, .outputs_contint__icons__link, .experts__pagination__link, .experts__pagination__next, .centers_in__link__cart, .history__download__cart, .history__download__data, .history__download__title__h3 span, .history__download__title__h3, .history__menu__link {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -731,16 +731,36 @@ label {
 .centers_in__link__cart {
   display: inline-block;
   margin-top: 20px;
-  padding: 18px 50px;
+  padding: 16px 50px;
   background-color: #880019;
   font-size: 12px;
   font-weight: 700;
   color: #fff;
   line-height: 100%;
   text-transform: uppercase;
+  border: 2px solid #880019;
 }
 .centers_in__link__cart span {
   margin-left: 5px;
+}
+.centers_in__cart__text {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+.centers_in__active .centers_in__cart__text {
+  width: 100%;
+  height: auto;
+  overflow: inherit;
+  opacity: 1;
+}
+.centers_in__active .centers_in__cart__text .outputs__title__h2 {
+  margin-top: 20px;
+}
+.centers_in__active .centers_in__link__cart {
+  background-color: #fff;
+  color: #880019;
 }
 
 @media (max-width: 1300px) {
