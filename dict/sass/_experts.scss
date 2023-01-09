@@ -112,6 +112,27 @@
             color:$fff;
         }
     }
+
+    &__button__cart{
+        margin-top: 20px;
+        width: 100%;
+        padding: 16px 10px;
+        background-color:$title;
+        @include fontAll(12px,700,$fff);
+        line-height: 100%;
+        text-transform: uppercase;
+        border:2px solid $title;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+        @extend%transition;
+
+        &:hover{
+            color:$title;
+            background-color:$fff;
+        }
+    }
 }
 
 .input-wrap {

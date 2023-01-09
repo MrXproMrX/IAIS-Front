@@ -28,7 +28,7 @@
   src: url("../fonts/GothaProBla.otf") format("truetype");
   font-weight: 900;
 }
-.footer__link__icons, .footer__link__menu, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__link__dropdown, .header__link__cart span, .header__link__cart, .header__link__menu, .outputs_contint__icons__link, .experts__pagination__link, .experts__pagination__next, .centers_in__link__cart, .history__download__cart, .history__download__data, .history__download__title__h3 span, .history__download__title__h3, .history__menu__link {
+.footer__link__icons, .footer__link__menu, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__link__dropdown, .header__link__cart span, .header__link__cart, .header__link__menu, .outputs_contint__icons__link, .experts__button__cart, .experts__pagination__link, .experts__pagination__next, .centers_in__link__cart, .history__download__cart, .history__download__data, .history__download__title__h3 span, .history__download__title__h3, .history__menu__link {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -920,6 +920,25 @@ label {
 .experts__pagination__link:hover {
   background-color: #880019;
   color: #fff;
+}
+.experts__button__cart {
+  margin-top: 20px;
+  width: 100%;
+  padding: 16px 10px;
+  background-color: #880019;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100%;
+  text-transform: uppercase;
+  border: 2px solid #880019;
+}
+.experts__button__cart span {
+  margin-left: 5px;
+}
+.experts__button__cart:hover {
+  color: #880019;
+  background-color: #fff;
 }
 
 .input-wrap {
