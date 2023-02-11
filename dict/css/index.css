@@ -995,6 +995,7 @@ label {
 .experts_in__cart__img img {
   max-height: 400px;
   aspect-ratio: 1;
+  object-position: center top;
 }
 .experts_in__text {
   font-size: 16px;
