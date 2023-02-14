@@ -105,7 +105,7 @@
         @include fiximg(100%,auto,true);
         img{
             max-height: 280px;
-            object-position: center;
+            object-position: center top;
             aspect-ratio: 1;
         }
     }

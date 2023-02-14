@@ -701,7 +701,7 @@ label {
 }
 .centers_in__list__img img {
   max-height: 280px;
-  object-position: center;
+  object-position: center top;
   aspect-ratio: 1;
 }
 .centers_in__contacts {
