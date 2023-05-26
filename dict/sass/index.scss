@@ -939,6 +939,10 @@ body{
         @include fontAll(16px,400,$link);
         line-height: 130%;
 
+        img{
+            display: none !important;
+        }
+
         max-height: 62px;
         -webkit-line-clamp: 3;
         position: relative;

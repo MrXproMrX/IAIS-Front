@@ -2608,6 +2608,9 @@ body {
   text-overflow: ellipsis;
   padding: 0 30px;
 }
+.news__text img {
+  display: none !important;
+}
 
 .subscribe {
   position: relative;
